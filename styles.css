@@ -1,0 +1,1111 @@
+/* ==================== CSS RESET & VARIABLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #01A049;
+    --primary-light: rgba(1, 160, 73, 0.1);
+    --primary-dark: #01803a;
+    --white: #ffffff;
+    --black: #333333;
+    --gray: #666666;
+    --light-gray: #f5f5f5;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --transition: all 0.3s ease;
+    --blur-bg: rgba(1, 160, 73, 0.1);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    color: var(--black);
+    line-height: 1.6;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ==================== TYPOGRAPHY ==================== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: var(--gray);
+}
+
+/* ==================== BUTTONS ==================== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+/* ==================== HEADER & NAVIGATION ==================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--black);
+    margin: 3px 0;
+    transition: var(--transition);
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero-bg-blur {
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: var(--blur-bg);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-heading {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.hero-heading span {
+    color: var(--primary-color);
+}
+
+.hero-subheading {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.micro-copy {
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+    color: #ff3d4c;
+    
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+/* ==================== STORE INFO SECTION ==================== */
+.store-info {
+    background-color: var(--light-gray);
+    padding: 60px 0;
+}
+
+/* Pastikan container utama menggunakan kolom agar teks turun ke bawah */
+.store-info-container {
+    display: flex;
+    flex-direction: column; /* Mengatur arah tumpukan ke bawah */
+    align-items: center;    /* Mengetengahkan logo dan teks */
+    gap: 30px;
+    text-align: center;     /* Mengetengahkan teks deskripsi */
+}
+
+/* Container khusus untuk menyejajarkan kedua logo */
+.store-logos-wrapper {
+    display: flex;          /* Membuat logo berjejer horizontal */
+    justify-content: center;
+    gap: 20px;              /* Jarak antar logo */
+}
+
+/* Pastikan ukuran logo tetap konsisten */
+.store-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.store-description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.store-description p {
+    color: var(--gray);
+}
+
+/* ==================== PRODUCTS SECTION ==================== */
+.products {
+    background-color: var(--white);
+}
+
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--border-color);
+    background: var(--white);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--gray);
+}
+
+.tab-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.products-grid-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--border-color);
+}
+
+.products-grid-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.products-grid-container::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.products-grid-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.products-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(280px, 320px);
+    gap: 20px;
+    padding: 10px 5px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.product-description {
+    font-size: 14px;
+    color: var(--gray);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 5px 0;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-detail, .btn-buy {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    display: flex;           /* FLEXBOX */
+    align-items: center;      /* VERTIKAL TENGAH */
+    justify-content: center;  /* HORIZONTAL TENGAH */
+    gap: 8px;                /* JARAK ANTARA ICON DAN TEKS */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-detail {
+    background-color: var(--light-gray);
+    color: var(--black);
+}
+
+.btn-detail:hover {
+    background-color: var(--border-color);
+}
+
+.btn-buy {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-buy:hover {
+    background-color: var(--primary-dark);
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* ==================== BENEFITS SECTION ==================== */
+.benefits {
+    background-color: var(--light-gray);
+}
+
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.benefit-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.benefit-image {
+    flex: 1;
+}
+
+.benefit-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.benefit-content {
+    flex: 1;
+}
+
+.benefit-description {
+    font-size: 18px;
+    color: var(--gray);
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.benefits-list-container {
+    margin-top: 8px;
+}
+
+.benefits-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.benefits-list i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+/* ============================================ */
+/* FAQ SECTION */
+/* ============================================ */
+.faq-section {
+    padding: 60px 5px;
+    background-color: #f9f9f9;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    padding: 20px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #f5f5f5;
+}
+
+.faq-question h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    flex: 1;
+    padding-right: 20px;
+}
+
+.faq-question i {
+    font-size: 18px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fafafa;
+    border-top: 1px solid transparent;
+}
+
+.faq-answer.active {
+    max-height: 200px;
+    border-top: 1px solid #eaeaea;
+}
+
+.faq-answer p {
+    padding: 20px 25px;
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive FAQ */
+@media screen and (max-width: 768px) {
+    .faq-section h2 {
+        font-size: 28px;
+    }
+    
+    .faq-question {
+        padding: 15px 20px;
+    }
+    
+    .faq-question h3 {
+        font-size: 16px;
+    }
+    
+    .faq-answer p {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ==================== FINAL CTA SECTION ==================== */
+.final-cta {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.final-cta .btn-primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.final-cta .btn-primary:hover {
+    background-color: var(--light-gray);
+}
+
+/* ==================== CONTACT SECTION ==================== */
+.contact {
+    background-color: var(--light-gray);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.product-slideshow {
+    flex: 1;
+    position: relative;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slideshow-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slideshow-controls button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slideshow-controls button:hover {
+    background-color: var(--primary-dark);
+}
+
+.social-info {
+    flex: 1;
+}
+
+.social-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--white);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.social-link:hover {
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+}
+
+.social-link i {
+    font-size: 24px;
+}
+
+.social-link.tiktok i {
+    color: #000000;
+}
+
+.social-link.instagram i {
+    color: #E4405F;
+}
+
+.contact-text {
+    color: var(--gray);
+}
+
+.contact-text strong {
+    color: var(--primary-color);
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footer-about img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    color: #999;
+    line-height: 1.8;
+}
+
+.footer-menu h4,
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu ul li {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul li a {
+    color: #999;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-menu ul li a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #999;
+    font-size: 14px;
+}
+
+/* ==================== POPOVER STYLES ==================== */
+.popover-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.popover-overlay.active {
+    display: flex;
+}
+
+.popover-content {
+    background: var(--white);
+    border-radius: 16px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: popoverFadeIn 0.3s ease;
+}
+
+@keyframes popoverFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.popover-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--light-gray);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--black);
+    transition: var(--transition);
+    z-index: 10;
+}
+
+.popover-close:hover {
+    background: var(--border-color);
+    transform: rotate(90deg);
+}
+
+.popover-body {
+    padding: 30px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popover-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.popover-description {
+    font-size: 15px;
+    color: var(--gray);
+}
+
+.popover-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popover-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.popover-benefits i {
+    color: var(--primary-color);
+}
+
+.popover-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.popover-buy-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    display: flex;           /* FLEXBOX */
+    align-items: center;      /* VERTIKAL TENGAH */
+    justify-content: center;  /* HORIZONTAL TENGAH */
+    gap: 8px;                /* JARAK ANTARA ICON DAN TEKS */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.popover-buy-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .hero-heading {
+        font-size: 36px;
+    }
+    
+    .benefit-item {
+        gap: 30px;
+    }
+    
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile & Tablet */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: var(--transition);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px 0;
+        gap: 20px;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    /* Hero */
+    .hero-container {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .hero-bg-blur {
+        width: 400px;
+        height: 400px;
+    }
+    
+    /* Store Info */
+    .store-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Products */
+    .products-grid {
+        grid-auto-columns: minmax(240px, 280px);
+    }
+    
+    /* Benefits */
+    .benefit-item,
+    .benefit-item.reverse {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .benefits-list li {
+        justify-content: left;
+    }
+    
+    /* Contact */
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .slideshow-container {
+        height: 250px;
+        width: 50vh;
+    }
+    
+    .social-link:hover {
+        transform: translateY(-5px);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-about img {
+        margin: 0 auto 20px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Mobile Small */
+@media screen and (max-width: 480px) {
+    .hero-heading {
+        font-size: 28px;
+    }
+    
+    .hero-subheading {
+        font-size: 16px;
+    }
+    
+    .category-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+    
+    .tab-btn {
+        flex: 0 0 auto;
+    }
+    
+    .products-grid {
+        grid-auto-columns: 260px;
+    }
+    
+    .benefit-description {
+        font-size: 16px;
+    }
+    
+    .popover-content {
+        max-width: 95%;
+    }
+    
+    .popover-body {
+        padding: 25px 20px 20px;
+    }
+}
