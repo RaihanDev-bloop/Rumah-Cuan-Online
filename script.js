@@ -11,7 +11,7 @@ const productsData = {
             name: "Koleksi 3000++ Video Affiliate Siap Upload (Lynk.id)",
             description: "3.000++ video HD bebas copyright untuk Shopee, TikTok, & Facebook. Tanpa wajah, langsung upload! Ada link keranjang kuning & oren.",
             price: 15000,
-            image: "assets/image/3000-video-affiliate-siap-pakai.jpeg",
+            image: "3000-video-affiliate-siap-pakai.jpeg",
             affiliateLink:" http://lynk.id/rco28/K1DBlnv/checkout",
             benefits: ["Video HD bebas copyright 100%", "Bisa upload tanpa nunjukin wajah", "Lengkap dengan link keranjang", "Cocok untuk semua platform", "Aman dari banned & strik", "Langsung upload atau diedit"]
         }
@@ -26,7 +26,7 @@ const productsData = {
             name: "E-Book 999 Templates WTF Hook oleh Akademi Creator (Lynk.id)",
             description: "Rahasia neuroscience hentikan scroll dalam 3 detik. Dapatkan 999 template hook siap pakai sesuai niche. Views meledak instan!",
             price: 99000,
-            image: "assets/image/ebook-999-template-wtf-hook.jpg",
+            image: "ebook-999-template-wtf-hook.jpg",
             affiliateLink: "http://lynk.id/rco28/m4mqkgwpgz44/checkout",
             benefits: ["999 template siap pakai (copy-paste)", "Manipulasi otak audiens secara legal", "Rahasia 8 basic human instinct", "Teknik WTF hook level tertinggi", "Fundamental crafting hook lengkap", "Cocok untuk semua niche konten", "Hentikan scroll dalam 3 detik"]
         },
@@ -41,7 +41,7 @@ const productsData = {
             name: "Paket Lengkap Kuasai AI 6-in-1 by AICO (Shopee)",
             description: "Kuasai AI dengan 6 produk premium: Kamus ChatGPT, Buku Panduan, 3 E-Book, 100+ Prompt Template, 6 Jam Video, dan AICO Learning Pass!",
             price: 229000,
-            image: "assets/image/paket-lengkap-kuasai-ai.png",
+            image: "paket-lengkap-kuasai-ai.png",
             affiliateLink: "https://s.shopee.co.id/AUoykdcm7P",
             benefits: ["6 produk premium dalam 1 paket", "120+ contoh penggunaan ChatGPT", "100+ template prompt siap pakai", "6 jam video tutorial praktis", "Akses platform AICO eksklusif", "Cocok untuk pemula hingga ahli", "Materi selalu terupdate"]
         }
@@ -56,7 +56,7 @@ const productsData = {
             name: "Organic Brand Blueprint By Deryansha (Lynk.id)",
             description: "Bangun aset digital, raih cuan jangka panjang.",
             price: 999000,
-            image: "/assets/image/cara-bangun-brand-organic-deryansha.jpg",
+            image: "cara-bangun-brand-organic-deryansha.jpg",
             affiliateLink: "http://lynk.id/rco28/eB4zDzV/checkout",
             benefits: ["Traffic Tanpa Iklan", "Cuan Tanpa Endors", "Cara cari winning produk dan kelola cutomer (RO dan CRM)", "Bangun Tim Konten Kreatif Menghasilkan", "Paket 10 Video Pembelajaran"]
         },
@@ -65,7 +65,7 @@ const productsData = {
             name: "Milyarder Rumahan: Riset Jitu, Jualan Laris BY NR House (Lynk.id)",
             description: "Panduan rahasia meraih omzet 1,5 Miliar dalam 6 bulan dari rumah. Pelajari riset produk jitu, supplier, dan traffic tanpa perlu pengalaman!.",
             price: 149000,
-            image: "/assets/image/dari-rumah-Jualan-produk-hasil-milyaran-by-NRhouse.jpg",
+            image: "dari-rumah-Jualan-produk-hasil-milyaran-by-NRhouse.jpg",
             affiliateLink: "http://lynk.id/rco28/RKeeraV/checkout",
             benefits: ["Riset produk potensi milyaran", "Temukan pola produk paling laris", "Panduan lengkap mendapatkan supplier", "Rahasia traffic untuk penjualan eksplosif", "Langkah praktis untuk pemula mutlak", "Target omzet ratusan hingga milyaran"]
         },
@@ -80,7 +80,7 @@ const productsData = {
             name: "Bundle 2 Buku Suwandi Baskara: TikTok & Shopee Affiliate (Shopee)",
             description: "Dapatkan dua buku sekaligus! Panduan lengkap TikTok & Shopee Affiliate dari nol hingga mahir. Lengkap dengan hook konten, riset produk, dan trik FYP!",
             price: 30000,
-            image: "assets/image/bundle-buku-tiktok-shopee-affiliate.png",
+            image: "bundle-buku-tiktok-shopee-affiliate.png",
             affiliateLink: "https://s.shopee.co.id/8KkUC0hxUv",
             benefits: ["Dua buku affiliate sekaligus", "Panduan TikTok & Shopee lengkap", "Kamus saku hook 3 detik viral", "Rahasia FYP & algoritma terkini", "Tips live streaming & GMV Max", "Cocok untuk pemula hingga mahir", "Bonus komunitas eksklusif kreator"]
         }
