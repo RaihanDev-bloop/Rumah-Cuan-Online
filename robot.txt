@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /assets/
-Allow: /css/
-Allow: /js/
 
 # EDIT BAGIAN DI BAWAH INI
-Sitemap: https://usernameanda.github.io/nama-repo/sitemap.xml
+Sitemap: https://raihandev-bloop.github.io/Rumah-Cuan-Online/sitemap.xml
