@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://raihandev-bloop.github.io/Rumah-Cuan-Online/</loc>
-    <lastmod>2026-03-03</lastmod>
+    <loc>https://rumahcuanonline.com/</loc>
+    <lastmod>2026-03-10</lastmod>
     <priority>1.00</priority>
+
+    <image:image>
+      <image:loc>https:https://raihandev-bloop.github.io/Rumah-Cuan-Online/3000-video-affiliate-siap-pakai.jpeg</image:loc>
+      <image:title>Koleksi 3000 Video Affiliate Siap Upload</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https:https://raihandev-bloop.github.io/Rumah-Cuan-Online/ebook-999-template-wtf-hook.jpg</image:loc>
+      <image:title>E-Book 999 Templates WTF Hook</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://raihandev-bloop.github.io/Rumah-Cuan-Online/paket-lengkap-kuasai-ai.png</image:loc>
+      <image:title>Paket Lengkap Kuasai AI 6-in-1</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://raihandev-bloop.github.io/Rumah-Cuan-Online/cara-bangun-brand-organic-deryansha.jpg</image:loc>
+      <image:title>Organic Brand Blueprint By Deryansha</image:title>
+    </image:image>
   </url>
 </urlset>
