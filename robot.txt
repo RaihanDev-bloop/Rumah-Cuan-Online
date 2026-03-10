@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# EDIT BAGIAN DI BAWAH INI
 Sitemap: https://raihandev-bloop.github.io/Rumah-Cuan-Online/sitemap.xml
